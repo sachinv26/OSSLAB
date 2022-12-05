@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fonts and icons-->
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--application title-->
+    <title>OSS Project</title>
+  </head>
+  <body>
+    <nav><h1 class="title" style="margin-bottom: 0px">Movies Time!</h1></nav>
+    <header class="hero"></header>
+    <!--header title-->
+    <!--hero card left-->
+    <main class="flex-row justify-space-between">
+      <div class="col-lg-4 col-md-8 poster-article">
+        <form>
+          <!--search bar-->
+          <input
+            list="list-item"
+            type="text"
+            name="movies"
+            onfocus="this.value=''"
+            id="movie-title"
+            placeholder="Search here"
+          />
+          <button type="submit" id="searchbutton">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <datalist id="list-item">
+          <option value="Avengers"></option>
+          <option value="Alice in Wonderland"></option>
+          <option value="Above Suspicion"></option>
+          <option value="Anatomy of a Murder"></option>
+          <option value="Alien"></option>
+          <option value="Argo"></option>
+          <option value="Cinderella"></option>
+          <option value="After Alice"></option>
+          <option value="Air Force One"></option>
+          <option value="A Nightmare on Elm Street"></option>
+          <option value="Amityville 3-D"></option>
+          <option value="A Stolen Life"></option>
+          <option value="Dial M for Murder"></option>
+          <option value="A FistFul of Dollars"></option>
+          <option value="Notorious"></option>
+          <option value="Another Day"></option>
+          <option value="A Kiss So Deadly"></option>
+          <option value="Atonement"></option>
+          <option value="Deadly Encounter"></option>
+          <option value="Titanic"></option>
+          <option value="Independence Day"></option>
+          <option value="Ghostbusters"></option>
+          <option value="Pretty Woman"></option>
+          <option value="Jurrassic Park"></option>
+          <option value="Saving private Ryan"></option>
+          <option value="The Day After Tomorrow"></option>
+          <option value="The Fujitive"></option>
+          <option value="Sonic the Hedgehog"></option>
+          <option value="There's something About Mary"></option>
+          <option value="Gone With the Wind"></option>
+          <option value="Star Wars"></option>
+          <option value="The sound of music"></option>
+          <option value="The Ten Commandments"></option>
+          <option value="Jaws"></option>
+          <option value="Doctor Zhivago"></option>
+          <option value="The Exorcist"></option>
+          <option value="Snow white and the Seven Dwarfs"></option>
+          <option value="101 Dalmatian"></option>
+          <option value="Ben-Hur"></option>
+          <option value="Avatar"></option>
+          <option value="The Lion King"></option>
+          <option value="The Sting"></option>
+          <option value="Raiders of the Lost Ark"></option>
+          <option value="Fantasia"></option>
+          <option value="The Godfather"></option>
+          <option value="Mary Poppins"></option>
+          <option value="Black Panther"></option>
+        </datalist>
+
+        <!--first filled aspect after search: poster-->
+
+        <div class="poster" id="poster"></div>
+      </div>
+
+      <!--local storage based on history of past searches-->
+      <div class="col-lg-5 col-md-12 reviews-section">
+        <p>
+          This site is providing you information about movies. The poster, plot
+          and critics are given so that you will have idea about a certain movie
+          if you're planning to watch whenever you want. Enjoy the searching!
+        </p>
+        <p>
+          Looking for a good movies?
+          <a href="https://www.hotstar.com/in/movies"> Checkout here! </a>
+        </p>
+        <!--second filled aspect after search: plot-->
+        <div class="description">
+          <h3>Description</h3>
+          <p id="plot"></p>
+          <!--third filled aspect after search: critic rating-->
+          <p id="critic-ratings"></p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4" id="dropdown"></div>
+    </main>
+
+    <!--footer-->
+    <footer class="flex-row justify-space-between">
+      <div>
+        OSS Group Project <i class="fas fa-heart" style="color: red"></i>
+      </div>
+      <div>Made by : Sachin Verma, Rishabh Rai,Priyank Shankar</div>
+    </footer>
+
+    <!-- links for the script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
